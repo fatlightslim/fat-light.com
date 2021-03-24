@@ -1,0 +1,107 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif+JP:400,700&display=swap&subset=japanese");
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* font-family: Dosis, sans-serif !important; */
+}
+
+.noto {
+  font-family: "Noto Serif JP", serif;
+}
+
+.dosis {
+  font-family: Dosis, sans-serif;
+}
+
+@tailwind base;
+/* Write your own custom base styles here */
+
+/* Start purging... */
+
+@tailwind components;
+/* Stop purging. */
+
+/* Write your own custom component styles here */
+
+/* Start purging... */
+
+@tailwind utilities;
+/* Stop purging. */
+
+/* Your own custom utilities */
+
+
+.bg-spider {
+  background: #e3f4df;
+}
+.bg-line {
+  background: #01a04b;
+}
+
+.text-gold {
+  background-image: linear-gradient(
+    135deg,
+    #b8751e,
+    #ffce08 37%,
+    #fefeb2 47%,
+    #fafad6 50%,
+    #fefeb2 53%,
+    #e1ce08 63%,
+    #b8751e
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.marker-yellow {
+  background: linear-gradient(transparent 60%, #ffff66 60%);
+}
+
+.headline img:not(.no-grow):hover {
+  transform: scale(1.1);
+}
+.headline img:not(.no-grow) {
+  transition: all 0.2s ease-in-out;
+}
+
+.wahoo {
+  /* font-family: 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'Hiragino Mincho ProN', 'HGS明朝E', 'ＭＳ Ｐ明朝', serif; */
+  position: relative;
+  padding: 1.5rem 1rem;
+  -webkit-box-shadow: 0 2px 14px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.1);
+}
+
+.wahoo:before,
+.wahoo:after {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  content: "";
+  background-image: -webkit-linear-gradient(
+    315deg,
+    #704308 0%,
+    #ffce08 40%,
+    #e1ce08 60%,
+    #704308 100%
+  );
+  background-image: linear-gradient(
+    135deg,
+    #704308 0%,
+    #ffce08 40%,
+    #e1ce08 60%,
+    #704308 100%
+  );
+}
+
+.wahoo:before {
+  top: 0;
+}
+
+.wahoo:after {
+  bottom: 0;
+}
