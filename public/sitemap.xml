@@ -1,98 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://fatlightslim.com/contact</loc>
-  </url>
-
-  <url>
-    <loc>https://fatlightslim.com/faq</loc>
-  </url>
-
-  <url>
-    <loc>https://fatlightslim.com</loc>
-  </url>
-
-  <url>
-    <loc>https://fatlightslim.com/policies</loc>
-  </url>
-
-  <url>
-    <loc>https://fatlightslim.com/terms</loc>
-  </url>
-
-  <url>
-    <loc>https://fatlightslim.com/admin/index</loc>
-  </url>
-
-  <url>
-    <loc>https://fatlightslim.com/order/detail</loc>
-  </url>
-
-  <url>
-    <loc>https://fatlightslim.com/order/index</loc>
-  </url>
-
-  <url>
-    <loc>https://fatlightslim.com/order/success</loc>
-  </url>
-
-  <url>
-    <loc>https://fatlightslim.com/posts/[slug]</loc>
-  </url>
-
-  <url>
-    <loc>https://fatlightslim.com/posts/index</loc>
-  </url>
-
-  <url>
-    <loc>https://fatlightslim.com/sale/spring-2021</loc>
-  </url>
-
-  <url>
-    <loc>https://fatlightslim.com/admin/orders/[_id]</loc>
-  </url>
-
-  <url>
-    <loc>https://fatlightslim.com/products/marshydro/fc6500</loc>
-  </url>
-
-  <url>
-    <loc>https://fatlightslim.com/products/marshydro/sp150</loc>
-  </url>
-
-  <url>
-    <loc>https://fatlightslim.com/products/marshydro/sp3000</loc>
-  </url>
-
-  <url>
-    <loc>https://fatlightslim.com/products/marshydro/sp6500</loc>
-  </url>
-
-  <url>
-    <loc>https://fatlightslim.com/products/marshydro/ts</loc>
-  </url>
-
-  <url>
-    <loc>https://fatlightslim.com/products/secondmarket/index</loc>
-  </url>
-
-  <url>
-    <loc>https://fatlightslim.com/products/spiderfarmer/all</loc>
-  </url>
-
-  <url>
-    <loc>https://fatlightslim.com/products/spiderfarmer/sf1000</loc>
-  </url>
-
-  <url>
-    <loc>https://fatlightslim.com/products/spiderfarmer/sf2000</loc>
-  </url>
-
-  <url>
-    <loc>https://fatlightslim.com/products/spiderfarmer/sf4000</loc>
-  </url>
-
-  <url>
-    <loc>https://fatlightslim.com/products/spiderfarmer/sf7000</loc>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url><loc>http://localhost:3000</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-03-24T06:26:38.116Z</lastmod></url>
+<url><loc>http://localhost:3000/admin</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-03-24T06:26:38.117Z</lastmod></url>
+<url><loc>http://localhost:3000/contact</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-03-24T06:26:38.117Z</lastmod></url>
+<url><loc>http://localhost:3000/faq</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-03-24T06:26:38.117Z</lastmod></url>
+<url><loc>http://localhost:3000/order</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-03-24T06:26:38.117Z</lastmod></url>
+<url><loc>http://localhost:3000/order/detail</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-03-24T06:26:38.117Z</lastmod></url>
+<url><loc>http://localhost:3000/order/success</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-03-24T06:26:38.117Z</lastmod></url>
+<url><loc>http://localhost:3000/policies</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-03-24T06:26:38.117Z</lastmod></url>
+<url><loc>http://localhost:3000/posts</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-03-24T06:26:38.117Z</lastmod></url>
+<url><loc>http://localhost:3000/products/marshydro/fc6500</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-03-24T06:26:38.117Z</lastmod></url>
+<url><loc>http://localhost:3000/products/marshydro/sp150</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-03-24T06:26:38.117Z</lastmod></url>
+<url><loc>http://localhost:3000/products/marshydro/sp3000</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-03-24T06:26:38.117Z</lastmod></url>
+<url><loc>http://localhost:3000/products/marshydro/sp6500</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-03-24T06:26:38.117Z</lastmod></url>
+<url><loc>http://localhost:3000/products/marshydro/ts</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-03-24T06:26:38.117Z</lastmod></url>
+<url><loc>http://localhost:3000/products/secondmarket</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-03-24T06:26:38.117Z</lastmod></url>
+<url><loc>http://localhost:3000/products/spiderfarmer/all</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-03-24T06:26:38.117Z</lastmod></url>
+<url><loc>http://localhost:3000/products/spiderfarmer/sf1000</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-03-24T06:26:38.117Z</lastmod></url>
+<url><loc>http://localhost:3000/products/spiderfarmer/sf2000</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-03-24T06:26:38.117Z</lastmod></url>
+<url><loc>http://localhost:3000/products/spiderfarmer/sf4000</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-03-24T06:26:38.117Z</lastmod></url>
+<url><loc>http://localhost:3000/products/spiderfarmer/sf7000</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-03-24T06:26:38.117Z</lastmod></url>
+<url><loc>http://localhost:3000/sale/spring-2021</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-03-24T06:26:38.117Z</lastmod></url>
+<url><loc>http://localhost:3000/terms</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-03-24T06:26:38.117Z</lastmod></url>
+<url><loc>http://localhost:3000/posts/what-is-k</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-03-24T06:26:38.117Z</lastmod></url>
+<url><loc>http://localhost:3000/posts/what-is-nm</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-03-24T06:26:38.117Z</lastmod></url>
+<url><loc>http://localhost:3000/posts/what-is-daisy-chain</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-03-24T06:26:38.117Z</lastmod></url>
+<url><loc>http://localhost:3000/posts/what-is-ppfd</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-03-24T06:26:38.117Z</lastmod></url>
+<url><loc>http://localhost:3000/posts/how-to-choose-your-grow-light</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-03-24T06:26:38.117Z</lastmod></url>
 </urlset>

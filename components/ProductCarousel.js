@@ -3,7 +3,7 @@ import ProductBanner from "../components/ProductBanner"
 import CardBanner from "../components/CardBanner"
 import { products } from "../data/products"
 import { data } from "../data/home"
-import Hero from "./NewHero";
+// import Hero from "./NewHero";
 
 export default function ProductCarousel({ settings = {
   dots: true,

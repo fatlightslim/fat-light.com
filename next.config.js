@@ -9,16 +9,7 @@ module.exports = {
   //   defaultLocale: "ja",
   // },
   plugins: [
-    // require("@tailwindcss/typography"),
-    // ...
   ],
-  webpack: (config, { isServer }) => {
-    if (isServer) {
-      require("./scripts/sitemap-generator")
-    }
-
-    return config
-  },
   env: {
     company: {
       ja: "合同会社SBO",

@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { getImageFields } from "../scripts/contentful"
+// import { getImageFields } from "../scripts/contentful"
 
 export default function NewHero({ hero, angle, amazon }) {
 
