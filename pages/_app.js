@@ -9,13 +9,6 @@ import { useRouter } from "next/router"
 import { useState, useEffect } from "react"
 import { CartProvider } from "react-use-cart"
 import * as data from "../manifest.json"
-import TagManager from 'react-gtm-module'
-
-const tagManagerArgs = {
-    gtmId: 'G-6BFW05MB41'
-}
-
-TagManager.initialize(tagManagerArgs)
 
 const products = data.default
 

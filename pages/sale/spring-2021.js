@@ -68,7 +68,7 @@ export const Product = ({ fields, sys }) => {
             </div>
           </div>
           <div className="sm:flex-1">
-            <h3 className="dosis text-2xl font-extrabold text-gray-900 sm:text-3xl tracking-tight">
+            <h3 className="dosis text-2xl font-extrabold text-gray-900 sm:text-3xl">
               {title}
             </h3>
             <p className="mt-6 text-base text-gray-500">{description}</p>
