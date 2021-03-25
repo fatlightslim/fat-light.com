@@ -36,8 +36,8 @@ export default function HeroMars({}) {
         </div>
         <div className="h-80 overflow-hidden relative w-full lg:h-auto lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
           <Image
-            width={1000}
-            height={1598}
+            width={500}
+            height={799}
             className="absolute w-full h-full object-cover"
             alt="hero"
             src="/img/hero2.jpg"
