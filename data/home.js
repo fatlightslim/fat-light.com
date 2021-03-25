@@ -81,8 +81,8 @@ export const data = {
         img: {
           src: "/img/harvestx.png",
           alt: "",
-          width: 1278,
-          height: 800,
+          width: 800,
+          height: 501,
         },
       },
       {
@@ -92,8 +92,8 @@ export const data = {
         img: {
           src: "/img/savemoney.png",
           alt: "電気代がこんなにおトク",
-          width: 1280,
-          height: 800,
+          width: 800,
+          height: 500,
         },
       },
       {
@@ -103,8 +103,8 @@ export const data = {
         img: {
           src: "/img/winx.png",
           alt: "3年保証 = 品質への自信です",
-          width: 1278,
-          height: 800,
+          width: 800,
+          height: 501,
         },
       },
     ],
