@@ -1,13 +1,12 @@
 import Document, { Html, Head, Main, NextScript } from "next/document"
-const GA_TRACKING_ID=　"G-6BFW05MB41"
+import { GA_TRACKING_ID } from '../utils/gtag'
+
 
 export default class MyDocument extends Document {
   render() {
     return (
       <Html lang="ja">
         <Head>
-
-
           <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}

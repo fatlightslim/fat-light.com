@@ -1,14 +1,13 @@
 import "../styles/index.css"
 import "video-react/dist/video-react.css"
 
-import Router from "next/router";
-import withGA from "next-ga";
 import { UserProvider } from "@auth0/nextjs-auth0"
 import { DefaultSeo } from "next-seo"
 import { useRouter } from "next/router"
 import { useState, useEffect } from "react"
 import { CartProvider } from "react-use-cart"
 import * as data from "../manifest.json"
+import * as gtag from "../utils/gtag"
 
 const products = data.default
 
@@ -18,8 +17,16 @@ const MyApp = ({ Component, pageProps }) => {
   const [menuOpen, setMenuOpen] = useState(false)
 
   useEffect(() => {
+    const handleRouteChange = (url) => {
+      gtag.pageview(url)
+    }
+    router.events.on("routeChangeComplete", handleRouteChange)
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange)
+    }
+
     setMenuOpen(false)
-  }, [router.pathname])
+  }, [router.events])
 
   const props = {
     products,
@@ -64,4 +71,4 @@ const MyApp = ({ Component, pageProps }) => {
   )
 }
 
-export default  withGA("UA-192932976-1", Router)(MyApp)
+export default MyApp
