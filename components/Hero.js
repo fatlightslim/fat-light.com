@@ -35,8 +35,8 @@ const Sale = () => (
           src="/img/tengu.jpg"
           alt="tengu"
           className=""
-          width={1200}
-          height={849}
+          width={800}
+          height={566}
         />
       </div>
       <div className="mx-auto max-w-7xl w-full py-6 lg:pt-12 text-center lg:text-left">

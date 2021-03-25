@@ -38,8 +38,8 @@ export default function SpiderOfficial({}) {
             <Image
               src="/img/sf7000/sf7000main.png"
               alt="Spider Farmer"
-              width={1296}
-              height={1065}
+              width={900}
+              height={740}
             />
           </div>
         </div>
