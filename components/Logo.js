@@ -9,8 +9,8 @@ export default function Logo({ className, name = process.env.site.name }) {
       <a className={classes}>
         <div className="w-9 inline-block -ml-3 align-middle -mb-0.5 mr-1">
           <Image
-            width={300}
-            height={249}
+            width={200}
+            height={166}
             alt="fat light logo"
             src="/img/jd/FatLightSlim.png"
           />
