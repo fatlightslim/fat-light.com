@@ -24,9 +24,11 @@ const MyApp = ({ Component, pageProps }) => {
     return () => {
       router.events.off("routeChangeComplete", handleRouteChange)
     }
-
-    setMenuOpen(false)
   }, [router.events])
+
+  useEffect(() => {
+    setMenuOpen(false)
+  }, [router.pathname])
 
   const props = {
     products,
