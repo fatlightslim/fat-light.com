@@ -9,9 +9,6 @@ import BrandLink from "../components/BrandLink"
 import Hero from "../components/Hero"
 import Layout from "../components/Layout"
 
-import "react-responsive-carousel/lib/styles/carousel.min.css" // requires a loader
-import { Carousel } from "react-responsive-carousel"
-
 // import Client from 'shopify-buy/index.unoptimized.umd'
 // const client = Client.buildClient(process.env.shopify)
 export default function Home({ ...props }) {
