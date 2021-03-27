@@ -2,7 +2,7 @@ import Link from "next/link"
 import { fetchPostJSON, cleanUp } from "../../utils/api-helpers"
 import { useForm } from "react-hook-form"
 import React, { useEffect, useState } from "react"
-import { ExCircle, ChevRight } from "../Svg"
+import { ExCircle, ChevRight, Spin } from "../Svg"
 import CartDetail from "./CartDetail"
 import { useCart } from "react-use-cart"
 
@@ -11,9 +11,10 @@ function isEmpty(obj) {
 }
 
 export default function OrderForm(props) {
-  const {items} = useCart()
+  const { items } = useCart()
   const { setForm, form, charge } = props
   const { handleSubmit, errors, register, setValue } = useForm()
+  const [loading, setLoading] = useState(false)
 
   useEffect(() => {
     const { customer } = form.value
@@ -25,13 +26,15 @@ export default function OrderForm(props) {
   }, [])
 
   const onSubmit = (customer) => {
+    setLoading(true)
     fetchPostJSON("/api/orders", {
       _id: form.value._id,
       customer,
       items: cleanUp(items),
       status: "draft",
-      charge
+      charge,
     }).then((r) => {
+      setLoading(false)
       setForm({ key: "PAYMENT", value: r })
     })
   }
@@ -157,7 +160,12 @@ export default function OrderForm(props) {
                 type="submit"
                 className="text-white bg-indigo-600 hover:bg-indigo-700 w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md md:py-4 md:text-lg md:px-10"
               >
-                支払情報確認 <ChevRight />
+                支払情報確認
+                {loading ? (
+                  <Spin className="animate-spin ml-2 h-5 w-5 text-white" />
+                ) : (
+                  <ChevRight />
+                )}
               </button>
             </div>
 

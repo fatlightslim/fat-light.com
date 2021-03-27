@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { data } from "../data/home"
 import Headline from "../components/Headline"
 import FeatureSummary from "../components/FeatureSummary"
@@ -15,6 +16,7 @@ export default function Home({ ...props }) {
   return (
     <Layout {...props}>
       <Hero />
+
       {/* <NewHero {...assets} /> */}
       <Headline data={data.Headline} />
       <FeatureNew />

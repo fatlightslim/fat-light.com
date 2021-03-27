@@ -9,11 +9,19 @@ function getTemplateData(data) {
   const { addr1, addr2, zip, pref } = customer
   const address = zip + " " + pref + addr1 + addr2
 
-  const price_detail = [{ title: "配送料", amount: charge.delivery.toLocaleString() }]
+  const price_detail = [
+    { title: "配送料", amount: charge.delivery.toLocaleString() },
+  ]
   if (charge.fee > 0)
-    price_detail.push({ title: "代引手数料", amount: charge.fee.toLocaleString() })
+    price_detail.push({
+      title: "代引手数料",
+      amount: charge.fee.toLocaleString(),
+    })
   if (charge.discount > 0)
-    price_detail.push({ title: "割引", amount: charge.discount.toLocaleString() })
+    price_detail.push({
+      title: "割引",
+      amount: charge.discount.toLocaleString(),
+    })
 
   return {
     tracking,
@@ -67,8 +75,13 @@ function buildEmail(data, s) {
   data.subject = templates[s].subject
 
   return {
-    to: customer.email,
-    bcc: "yokosuka@gmail.com",
+    personalizations: [
+      {
+        subject: templates[s].subject,
+        to: [{ email: customer.email }],
+        bcc: [{ email: "fatlightslim@gmail.com" }],
+      },
+    ],
     from: `FATLIGHT<${process.env.EMAIL}>`,
     // subject: templates[s].subject, // BUG. not working
     templateId: templates[s].template,
