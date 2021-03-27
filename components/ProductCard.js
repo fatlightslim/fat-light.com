@@ -1,4 +1,5 @@
 
+import { getImageFields } from "../utils/contentful"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -12,7 +13,7 @@ export default function ProductCard({ product }) {
         </div>
       </div>
       <div className="-mt-6 sm:mt-8 aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1">
-        <Img {...product.fields.image.fields} />
+        <Image  {...getImageFields(product.fields.image)} />
       </div>
     </Card>
   )
@@ -29,28 +30,6 @@ function Card({ children, color }) {
         </div>
       </div>
     </div>
-  )
-}
-
-function Img({ file }) {
-  return (
-    <Image
-      src={"https:" + file.url}
-      width={file.details.image.width}
-      height={file.details.image.height}
-      alt={file.title}
-      className="sm:rounded-lg"
-    />
-  )
-}
-
-function Button({ button, href }) {
-  return (
-    <Link href={href}>
-      <a className="mt-8 bg-transparent border border-white rounded-full shadow px-4 py-2 inline-flex items-center text-base font-bold relative z-30">
-        {button}
-      </a>
-    </Link>
   )
 }
 
