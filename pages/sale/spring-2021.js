@@ -95,12 +95,12 @@ export const Product = ({ fields, sys }) => {
               &yen;{" "}
               {regularPrice
                 ? regularPrice.toLocaleString()
-                : (Math.ceil(price / 0.8 / 100) * 100).toLocaleString()}
+                : (Math.ceil(price / 0.7 / 100) * 100).toLocaleString()}
             </span>
           </span>
           {!regularPrice && (
             <span className="inline-block align-middle px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800 ml-2">
-              20%OFF
+              30%OFF
             </span>
           )}
         </p>

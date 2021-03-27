@@ -41,7 +41,7 @@ export default function PricingTable({ main, left, right }) {
   )
 
   const Price = ({ price }) => {
-    const regularPrice = Math.ceil(price / 0.8 / 100) * 100
+    const regularPrice = Math.ceil(price / 0.7 / 100) * 100
     return (
       <>
         <div className="text-center px-3 mt-4">
@@ -52,7 +52,7 @@ export default function PricingTable({ main, left, right }) {
             </span>
           </span>
           <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800">
-            20%OFF
+            30%OFF
           </span>
         </div>
         <div className="flex items-center justify-center">
