@@ -46,7 +46,7 @@ const MyApp = ({ Component, pageProps }) => {
   }
 
   return (
-    <UserProvider profileUrl="">
+    <UserProvider >
       <CartProvider
         id="fatlight"
         onItemAdd={handleItemAdd}
